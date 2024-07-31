@@ -3256,6 +3256,7 @@ span.red-color {
 .w3l-banner-main nav ul li a:after,
 .w3l-banner-main nav ul li a:before {
   transition: all .5s;
+  border-radius: 10px;
 }
 
 .w3l-banner-main nav ul li a:hover {
@@ -3355,6 +3356,7 @@ span.red-color {
 .w3l-banner-main li.nav-item.active,.w3l-banner-main li.nav-item.active .nav-link {
   color: #91640F;
   background: #facf5a;
+  border-radius: 10px;
 }
 .w3l-banner-main .dropdown-menu {
   padding: 0;
@@ -7694,6 +7696,7 @@ div.ppt {
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 html {
