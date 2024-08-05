@@ -3269,7 +3269,7 @@ span.red-color {
 }
 
 .w3l-banner-main nav.shift ul li a:hover {
-  color: #91640F;
+  color: #ffffff;
 }
 
 .w3l-banner-main nav.shift ul li a:after {
@@ -3284,7 +3284,7 @@ span.red-color {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #facf5a;
+  background: transparent;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -12275,7 +12275,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 .navbar-nav .nav-link {
