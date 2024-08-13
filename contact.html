@@ -13,6 +13,13 @@
   <!-- Template CSS -->
   <link rel="icon" type="image/x-icon" href="assets/images/img2.png">
 
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+
+
+  
 </head>
 
 <body>
@@ -66,7 +73,7 @@
       <div class="container py-lg-3">
         <div class="top-map">
           <div class="map-content-9">
-            <form action="https://formspree.io/f/your-form-id" method="post">
+            <form id="submit-form" action="https://script.google.com/macros/s/AKfycbyIkx6jPnwVehY4u0u9BBKaZFp_MJQ-vbR_Xd6hvkYJeqx0qJNrNrrZGbzHyAtiMFdrWg/exec" method="post">
               <div class="form-top1">
                 <h3 class="hny-title text-center mb-0">Drop me a line</h3>
                 <p class="mb-lg-5 mb-4 text-center">Interested in working together? Please let me know.</p>
@@ -170,6 +177,46 @@
     </script>
   </footer>
   <!-- //footer -->
+
+  <!-- <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"",
+            data:$("#submit-form").serialize(),
+            method:"",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script> -->
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <script>
+    document.getElementById('submit-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the default form submission
+
+      // Show alert box
+      alert('Form submitted successfully!');
+
+      // Submit the form using the hidden iframe
+      this.submit();
+
+      // Refresh the page after form submission
+      setTimeout(function() {
+        location.reload();
+      }, 1000); // Delay to ensure form submission completes
+    });
+  </script>
+
 </body>
 
 </html>
